@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.4](https://github.com/liozur/miniboard-zmk-config/compare/v0.5.3...v0.5.4) (2025-08-19)
+
+
+### Features
+
+* initial commit ([c4b4fb5](https://github.com/liozur/miniboard-zmk-config/commit/c4b4fb53a4230d3646df7a5e1082d3667cad1e59))
+
 ## [0.5.3](https://github.com/jnpngshiii/miniboard-zmk-config/compare/v0.5.2...v0.5.3) (2024-11-25)
 
 
