@@ -1,0 +1,267 @@
+layout: {zmk_keyboard: chipper42, layout_name: default_transform}
+layers:
+  '0':
+  - ''
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - ''
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
+  - G
+  - H
+  - {t: J, h: LSHFT}
+  - {t: K, h: LCTRL}
+  - {t: L, h: LALT}
+  - {t: ;, h: LGUI}
+  - ''
+  - ''
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''
+  - {t: SPACE, h: '1'}
+  - {t: '''', h: '2'}
+  - ''
+  - ''
+  - {t: '[', h: '3'}
+  - {t: ']', h: '4'}
+  '1':
+  - ''
+  - ''
+  - '-'
+  - '='
+  - ''
+  - ''
+  - ''
+  - ''
+  - \
+  - '`'
+  - ''
+  - ''
+  - ''
+  - {t: '1', h: LGUI}
+  - {t: '2', h: LALT}
+  - {t: '3', h: LCTRL}
+  - {t: '4', h: LSHFT}
+  - ''
+  - ''
+  - {t: '7', h: LSHFT}
+  - {t: '8', h: LCTRL}
+  - {t: '9', h: LALT}
+  - {t: '0', h: LGUI}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '5'
+  - ''
+  - ''
+  - '6'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '2':
+  - ''
+  - ''
+  - Gui+Sft+6
+  - {t: Gui+Sft+3, s: Gui+Sft+2}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+Sft+7
+  - {t: Gui+Sft+1, s: Gui+Sft+4}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '3':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PREV
+  - VOL UP
+  - BRI UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - PP
+  - BRI DN
+  - Gui+Ctl+Q
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - NEXT
+  - VOL DN
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  '4':
+  - ''
+  - ''
+  - ESC
+  - TAB
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BSPC, s: DEL}
+  - ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  '5':
+  - ''
+  - ''
+  - BT CLR
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - {t: BT, h: '7'}
+  - {t: BT, h: '8'}
+  - {t: BT, h: '9'}
+  - {t: BT, h: '0'}
+  - ''
+  - ''
+  - '0'
+  - ''
+  - ''
+  - {t: BT, h: '5'}
+  - ''
+  - ''
+  - {t: BT, h: '6'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+combos:
+- p: [36, 37]
+  k: B
+  l: ['0']
+- p: [40, 41]
+  k: ','
+  l: ['0']

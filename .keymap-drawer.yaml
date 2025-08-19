@@ -1,0 +1,9 @@
+parse_config:
+  raw_binding_map:
+    '&bootloader': Boot
+  zmk_combos:
+    combo_tab: {align: top, o: 0.15}
+    combo_del: {align: top, o: 0.15}
+    combo_f12: {align: bottom}
+    combo_btclr: {align: bottom}
+    combo_play: {align: right}

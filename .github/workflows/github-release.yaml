@@ -1,0 +1,42 @@
+name: github-release
+on:
+  push:
+    branches:
+      - master
+jobs:
+  ####################
+  # build
+  ####################
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  ####################
+  # draw
+  ####################
+  draw: # See: https://github.com/caksoylar/keymap-drawer/blob/main/.github/workflows/draw-zmk.yml.
+    needs:
+      - build
+    permissions:
+      contents: write
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    with:
+      keymap_patterns: "config/boards/shields/chipper42/chipper42.keymap"
+      draw_args: "chipper42:'--ghost-keys 0 1 4 5 6 7 10 11 12 17 18 23 24 25 26 27 29 30 32 33 34 35 38 39 -k corne_rotated -l LAYOUT_split_3x6_3'"
+      config_path: ".keymap_drawer.yaml"
+      output_folder: "imgs"
+      amend_commit: true
+      fail_on_error: true
+  ####################
+  # github-release
+  ####################
+  github-release:
+    needs:
+      - build
+      - draw
+    runs-on: ubuntu-latest
+    steps:
+      - name: init release-please
+        uses: googleapis/release-please-action@v4
+        with:
+          config-file: .github/release-please-config.json
+          manifest-file: .github/.release-please-manifest.json
+          token: ${{ secrets.PAT }}
